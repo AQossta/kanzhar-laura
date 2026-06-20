@@ -31,7 +31,7 @@ document.querySelectorAll('input[name="status"]').forEach(radio => {
 });
 
 // === 3. ТАЙМЕР ОБРАТНОГО ОТСЧЕТА ===
-const weddingDate = new Date("2026-08-14T19:00:00");
+const weddingDate = new Date("2026-08-15T19:00:00");
 
 function updateTimer() {
     const now = new Date();

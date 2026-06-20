@@ -9,27 +9,47 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Great+Vibes&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.google.com/share?selection.family=Bad+Script|Great+Vibes" rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <audio id="bgMusic" loop>
-        <source src="music.mp3" type="audio/mpeg">
-    </audio>
+    <audio
+    id="bgMusic"
+    src="assets/music.mp3"
+    autoplay
+    loop>
+</audio>
+<!-- 
+    <div class="top-flowers">
+        <img src="assets/f4.png" alt="Flowers">
+    </div> -->
 
     <section class="hero">
+
         <video class="hero-video" autoplay muted loop playsinline>
             <source src="https://res.cloudinary.com/dcjcladjx/video/upload/v1781935424/intro_qvag2f.mp4" type="video/mp4">
         </video>
+
+        <div class="flowers-top">
+            <img src="assets/flowers-top.png" alt="">
+        </div>
+
+        
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1>Kanzhar</h1>
-            <div class="amp">&&amp;</div>
+            <div class="amp">&amp;</div>
             <h1>Laura</h1>
             <button id="musicBtn">▶ Музыканы қосу</button>
         </div>
+        
     </section>
+
+    <div class="divider">
+    <img src="assets/raz.png" alt="Flowers divider">
+</div>
 
     <section class="invite">
         <h2>Құрметті</h2>
@@ -42,12 +62,12 @@
     </section>
 
     <div class="divider">
-        <img src="assets/flowers.png" alt="">
-    </div>
+    <img src="assets/raz.png" alt="Flowers divider">
+</div>
 
     <section class="invite-two">
         <p>СІЗ(ДЕР)ДІ БАЛАЛАРЫМЫЗ</p>
-        <h3>ҚАНЖАР МЕН ЛАУРАНЫҢ</h3>
+        <h3>Канжар мен Лауранын</h3>
         <p>
             ҮЙЛЕНУ ТОЙЫНА <br>
             АРНАЛҒАН САЛТАНАТТЫ <br>
@@ -58,25 +78,26 @@
     </section>
 
     <div class="divider">
-        <img src="assets/flowers.png" alt="">
-    </div>
+    <img src="assets/raz.png" alt="Flowers divider">
+</div>
 
-    <section class="date-section">
-        <h2>Тойымыз</h2>
-        <div class="date-card">
-            <div>ЖҰМА</div>
-            <div class="day">14</div>
-            <div>2026</div>
-        </div>
-        <h3>19:00</h3>
-    </section>
+    <div class="date-video">
+    <video autoplay loop muted playsinline>
+        <source src="assets/date.mp4" type="video/mp4">
+    </video>
+</div>
 
     <section class="location">
-        <h2>Мекен-жайымыз</h2>
-        <h3>Ақтөбе қаласы</h3>
-        <h1>«Қуаныш»</h1>
-        <h3>мейрамханасы</h3>
-        <a class="map-btn" href="https://2gis.kz" target="_blank">Картаны ашу</a>
+        <h4>Мекен-жайымыз:</h4><br><br>
+        <h5>АҚТӨБЕ ОБЛЫСЫ, ОЙЫЛ АУДАНЫ</h5>
+        <h6>'Куаныш'</h6>
+        <h7>МЕЙРАМХАНАСЫ</h7><br><br>
+        <h8>ЖЕТУГЕ ЫҢҒАЙЛЫ БОЛУ ҮШІН <br>ТӨМЕНДЕГІ КАРТАНЫ БАСЫП ҚОЛДАНЫҢЫЗ!</h8>
+        <a class="map-btn"
+   href="https://2gis.kz/kz_aktobe_oblast_rwop/geo/70030076439794328/54.663259,49.073270"
+   target="_blank">
+    <img src="assets/icongis.svg" alt="2GIS">
+</a>
     </section>
 
     <section class="timer-section">
@@ -88,9 +109,13 @@
     </section>
 
     <section class="owners">
-        <h2>Құрметпен, той иелері:</h2>
-        <h1>Қосым - Жанар</h1>
+        <h2>Kyрметпен, той иелері:</h2>
+        <h1>Kосым - Жанар</h1>
     </section>
+
+    <div class="divider">
+    <img src="assets/raz.png" alt="Flowers divider">
+</div>
 
     <section class="rsvp">
         <h2>Сауалнама</h2>
@@ -108,7 +133,7 @@
                 </label>
                 <label>
                     <input type="radio" name="status" id="statusSpouse" value="spouse">
-                    Жұбыммен келемін
+                    Жұбыммен/Жолдасыммен келемін
                 </label>
                 <label>
                     <input type="radio" name="status" id="statusNo" value="no">
@@ -117,19 +142,15 @@
             </div>
 
             <div id="spouseBlock" style="display:none;">
-                <label for="spouse">Жұбайыңыздың аты</label>
+                <label for="spouse">Жұбайыңыздың/Жолдасыңыздың аты</label>
                 <input type="text" id="spouse">
             </div>
 
-            <button type="submit">ЖІБЕРУ</button>
+            <button type="submit">жіберу</button>
         </form>
 
         <div id="message"></div>
 
-        <div class="guests-container" style="margin-top: 40px;">
-            <h3>Келетін қонақтар тізімі:</h3>
-            <ul id="guestList" style="list-style: none; padding: 0;"></ul>
-        </div>
     </section>
 
     <script src="script.js"></script>

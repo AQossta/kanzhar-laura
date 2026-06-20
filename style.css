@@ -1,7 +1,8 @@
 :root{
 --bg:#ffffff;
---wine:#92acdd;
+--wine:#173b64;
 --gold:#ffffff;
+--green:#697c70;
 }
 
 *{
@@ -99,18 +100,61 @@ margin-bottom:30px;
 }
 
 h3{
-font-family: 'Lobster', cursive;
-font-size:60px;
+font-family: 'Great Vibes', cursive;
+font-size:70px;
 color:var(--wine);
 margin-bottom:30px;
 }
 
+h4{
+font-family: 'Great Vibes', cursive;
+font-size:100px;
+color:var(--wine);
+margin-bottom:30px;
+}
 
-.divider{
-    text-align:center;
-    font-size:60px;
-    color:#b58d56;
-    margin:40px 0;
+h5{
+font-size:34px;
+line-height:1.6;
+margin:30px auto;
+max-width:800px;
+}
+
+h6{
+font-family: 'Great Vibes', cursive;
+font-size:100px;
+line-height:1.6;
+margin:30px auto;
+max-width:800px;
+color:var(--wine)
+}
+
+h7{
+font-size:34px;
+line-height:1.6;
+margin:30px auto;
+max-width:800px;
+}
+
+h8{
+font-size:34px;
+line-height:1.6;
+margin:30px auto;
+max-width:800px;
+}
+
+.divider {
+    width: 100%;
+    text-align: center;
+    margin: 40px 0;
+}
+
+.divider img {
+    display: block;
+    width: 100%;
+    max-width: 1200px; /* керек болса өзгертіңіз */
+    height: auto;
+    margin: 0 auto;
 }
 
 .invite p{
@@ -120,59 +164,20 @@ margin:30px auto;
 max-width:800px;
 }
 
-.invite-two{
-    position:relative;
-    overflow:hidden;
-    padding:120px 20px;
+
+.top-flowers {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    text-align: center;
 }
 
-.flowers-top{
-    position:absolute;
-
-    top:-30px;
-    left:0;
-
-    width:100%;
-    height:180px;
-
-    background-image:url("assets/blue-flower2.png");
-
-    background-repeat:repeat-x;
-
-    background-size:120px;
-
-    opacity:.9;
-}
-
-.flowers-bottom{
-    position:absolute;
-
-    bottom:-30px;
-    left:0;
-
-    width:100%;
-    height:180px;
-
-    background-image:url("assets/blue-flower2.png");
-
-    background-repeat:repeat-x;
-
-    background-size:120px;
-
-    opacity:.9;
-}
-
-.flowers-top,
-.flowers-bottom{
-
-    background-size:
-        140px auto;
-
-    opacity:.95;
-
-    filter:drop-shadow(
-        0 5px 10px rgba(0,0,0,.1)
-    );
+.top-flowers img {
+    width: 100%;
+    max-width: 800px; /* қажет болса өзгертіңіз */
+    height: auto;
 }
 
 .invite-two p{
@@ -180,6 +185,11 @@ font-size:34px;
 line-height:1.6;
 margin:30px auto;
 max-width:800px;
+}
+.date-video video{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 
 .date-card{
@@ -190,6 +200,17 @@ align-items:center;
 font-size:40px;
 }
 
+.datatoi-video{
+   position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;}
+
+
 .day{
 font-size:120px;
 font-weight:700;
@@ -198,18 +219,23 @@ color:var(--wine);
 
 .location h1{
 font-size:70px;
-font-family: 'Lobster', cursive;
+font-family:'Great Vibes',serif;
 color:var(--wine);
 }
 
 .map-btn{
-display:inline-block;
-margin-top:30px;
-padding:15px 40px;
-background:var(--wine);
-color:white;
-text-decoration:none;
-border-radius:40px;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.map-btn img{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
 }
 
 .timer-section{
@@ -243,7 +269,13 @@ font-weight:bold;
 }
 
 .owners h1{
-font-family: 'Lobster', cursive;
+font-family: 'Great Vibes', cursive;
+font-size:80px;
+color:var(--wine);
+}
+
+.owners h2{
+font-family: 'Great Vibes', cursive;
 font-size:80px;
 color:var(--wine);
 }
@@ -251,6 +283,12 @@ color:var(--wine);
 .rsvp{
 max-width:800px;
 margin:auto;
+}
+
+.rsvp h2{
+font-family: 'Great Vibes', cursive;
+font-size:80px;
+color:var(--wine);
 }
 
 .rsvp form{
@@ -267,6 +305,7 @@ border:2px solid #ddd;
 border-radius:40px;
 }
 
+
 .radio-group{
 display:flex;
 flex-direction:column;
@@ -276,12 +315,13 @@ font-size:28px;
 }
 
 button[type=submit]{
+font-family: 'Great Vibes', cursive;
 background:var(--wine);
 color:white;
 padding:18px;
 border:none;
 border-radius:40px;
-font-size:22px;
+font-size:40px;
 cursor:pointer;
 }
 
