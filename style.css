@@ -1,0 +1,392 @@
+:root{
+--bg:#ffffff;
+--wine:#92acdd;
+--gold:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+background:var(--bg);
+font-family:'Cormorant Garamond',serif;
+color:#222;
+}
+
+section{
+padding:80px 25px;
+text-align:center;
+}
+
+.hero{
+    position:relative;
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.hero-video{
+    position:absolute;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    object-fit:cover;
+}
+
+.hero-overlay{
+    position:absolute;
+    inset:0;
+
+    background:rgba(0,0,0,.35);
+}
+
+.hero-content{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    z-index:5;
+
+    text-align:center;
+
+    color:white;
+
+    width:90%;
+}
+
+
+
+.hero-content h1{
+    font-size:200px;
+    font-family: 'Great vibes', cursive;
+}
+
+.amp{
+    font-size:60px;
+    margin:10px 0;
+}
+
+#musicBtn{
+    margin-top:30px;
+
+    border:none;
+
+    padding:14px 28px;
+
+    border-radius:40px;
+
+    background:#d2ae69;
+
+    color:white;
+
+    cursor:pointer;
+}
+
+h2{
+font-family: 'Lobster', cursive;
+font-size:60px;
+color:var(--wine);
+margin-bottom:30px;
+}
+
+h3{
+font-family: 'Lobster', cursive;
+font-size:60px;
+color:var(--wine);
+margin-bottom:30px;
+}
+
+
+.divider{
+    text-align:center;
+    font-size:60px;
+    color:#b58d56;
+    margin:40px 0;
+}
+
+.invite p{
+font-size:34px;
+line-height:1.6;
+margin:30px auto;
+max-width:800px;
+}
+
+.invite-two{
+    position:relative;
+    overflow:hidden;
+    padding:120px 20px;
+}
+
+.flowers-top{
+    position:absolute;
+
+    top:-30px;
+    left:0;
+
+    width:100%;
+    height:180px;
+
+    background-image:url("assets/blue-flower2.png");
+
+    background-repeat:repeat-x;
+
+    background-size:120px;
+
+    opacity:.9;
+}
+
+.flowers-bottom{
+    position:absolute;
+
+    bottom:-30px;
+    left:0;
+
+    width:100%;
+    height:180px;
+
+    background-image:url("assets/blue-flower2.png");
+
+    background-repeat:repeat-x;
+
+    background-size:120px;
+
+    opacity:.9;
+}
+
+.flowers-top,
+.flowers-bottom{
+
+    background-size:
+        140px auto;
+
+    opacity:.95;
+
+    filter:drop-shadow(
+        0 5px 10px rgba(0,0,0,.1)
+    );
+}
+
+.invite-two p{
+font-size:34px;
+line-height:1.6;
+margin:30px auto;
+max-width:800px;
+}
+
+.date-card{
+display:flex;
+justify-content:center;
+gap:50px;
+align-items:center;
+font-size:40px;
+}
+
+.day{
+font-size:120px;
+font-weight:700;
+color:var(--wine);
+}
+
+.location h1{
+font-size:70px;
+font-family: 'Lobster', cursive;
+color:var(--wine);
+}
+
+.map-btn{
+display:inline-block;
+margin-top:30px;
+padding:15px 40px;
+background:var(--wine);
+color:white;
+text-decoration:none;
+border-radius:40px;
+}
+
+.timer-section{
+height:70vh;
+background:url("assets/IMG_1490.JPG") center/cover;
+position:relative;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.timer-overlay{
+position:absolute;
+inset:0;
+background:rgba(0,0,0,.45);
+}
+
+.timer-content{
+position:relative;
+z-index:2;
+color:white;
+}
+
+.timer-content h2{
+color:white;
+}
+
+.countdown{
+font-size:70px;
+font-weight:bold;
+}
+
+.owners h1{
+font-family: 'Lobster', cursive;
+font-size:80px;
+color:var(--wine);
+}
+
+.rsvp{
+max-width:800px;
+margin:auto;
+}
+
+.rsvp form{
+display:flex;
+flex-direction:column;
+gap:20px;
+margin-top:30px;
+}
+
+input[type=text]{
+padding:18px;
+font-size:22px;
+border:2px solid #ddd;
+border-radius:40px;
+}
+
+.radio-group{
+display:flex;
+flex-direction:column;
+gap:15px;
+text-align:left;
+font-size:28px;
+}
+
+button[type=submit]{
+background:var(--wine);
+color:white;
+padding:18px;
+border:none;
+border-radius:40px;
+font-size:22px;
+cursor:pointer;
+}
+
+.guests ul{
+list-style:none;
+max-width:600px;
+margin:auto;
+}
+
+.guests li{
+padding:15px;
+margin:10px 0;
+background:white;
+border-radius:20px;
+font-size:26px;
+}
+
+#message{
+margin-top:20px;
+font-size:24px;
+color:green;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:55px;
+}
+
+h2{
+font-size:45px;
+}
+
+.invite p{
+font-size:22px;
+}
+
+.day{
+font-size:80px;
+}
+
+.countdown{
+font-size:40px;
+}
+
+}
+
+@media (max-width:768px){
+
+.hero-content h1{
+    font-size:58px;
+}
+
+.amp{
+    font-size:42px;
+}
+
+#musicBtn{
+    font-size:14px;
+}
+
+.invite p{
+    font-size:22px;
+    line-height:1.5;
+}
+
+.day{
+    font-size:80px;
+}
+
+.date-card{
+    gap:15px;
+    font-size:22px;
+}
+
+.countdown{
+    font-size:34px;
+}
+
+.location h1{
+    font-size:48px;
+}
+
+.owners h1{
+    font-size:52px;
+}
+
+.rsvp{
+    padding:30px 20px;
+}
+
+.rsvp label{
+    font-size:20px;
+}
+
+input[type="text"]{
+    font-size:18px;
+}
+
+.radio-group{
+    font-size:18px;
+}
+
+.guests li{
+    font-size:18px;
+}
+
+}
