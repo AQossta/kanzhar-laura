@@ -283,13 +283,12 @@ font-size: 20px;
     letter-spacing: 1px;
 }
 .owners h1{
-font-family: 'Lobster', cursive;
+font-family: 'Great Vibes';
 font-size:40px;
 color:var(--wine);
 }
 
 .owners h2{
-font-family: 'Lobster', cursive;
 font-size:50px;
 color:var(--wine);
 }
